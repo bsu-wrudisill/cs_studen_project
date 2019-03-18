@@ -9,7 +9,7 @@ ds = Dataset(PathToFile)
 
 U = ds["UGRD_P0_L100_GLL0"][:,:,:]
 V = ds["VGRD_P0_L100_GLL0"][:,:,:]
-#Q = ds["vgrd_p0_l100_gll0"][:,:,:]
+#Q = ds["d_p0_l100_gll0"][:,:,:]  # There does not appear to be a specific humidity variable on pressure levels
 
 # mean along pressure coords
 u_mn = U.mean(axis=0)
